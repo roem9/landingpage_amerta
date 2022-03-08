@@ -179,7 +179,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-element elementor-element-12b1ec91 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-button" data-id="12b1ec91" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+			<a href="<?= $link_wa?>" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon elementor-align-icon-left">
 				<i aria-hidden="true" class="icon icon-whatsapp-2"></i>			</span>
@@ -606,7 +606,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-element elementor-element-2b434d1d elementor-align-left elementor-mobile-align-right elementor-widget elementor-widget-button" data-id="2b434d1d" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-size-sm" role="button">
+			<a href="<?= $link_wa?>" target="_blank" class="elementor-button elementor-size-sm" role="button">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon elementor-align-icon-left">
 				<i aria-hidden="true" class="fab fa-whatsapp"></i>			</span>
@@ -785,7 +785,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-element elementor-element-3669d7f elementor-align-left elementor-mobile-align-left elementor-widget elementor-widget-button" data-id="3669d7f" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-size-sm" role="button">
+			<a href="<?= $link_wa?>" target="_blank" class="elementor-button elementor-size-sm" role="button">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon elementor-align-icon-left">
 				<i aria-hidden="true" class="fab fa-whatsapp"></i>			</span>
@@ -1003,7 +1003,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 								<div class="elementor-element elementor-element-3442bb87 elementor-align-center elementor-widget elementor-widget-button" data-id="3442bb87" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-size-sm" role="button">
+			<a href="<?= $link_wa?>" target="_blank" class="elementor-button elementor-size-sm" role="button">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon elementor-align-icon-left">
 				<i aria-hidden="true" class="fab fa-whatsapp"></i>			</span>
@@ -1115,7 +1115,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-element elementor-element-486e64b0 elementor-align-left elementor-mobile-align-left elementor-widget elementor-widget-button" data-id="486e64b0" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-size-sm" role="button">
+			<a href="<?= $link_wa?>" target="_blank" class="elementor-button elementor-size-sm" role="button">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon elementor-align-icon-left">
 				<i aria-hidden="true" class="fab fa-whatsapp"></i>			</span>
@@ -1322,7 +1322,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-element elementor-element-5a36ebb1 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="5a36ebb1" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-size-sm" role="button">
+			<a href="<?= $link_wa?>" target="_blank" class="elementor-button elementor-size-sm" role="button">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon elementor-align-icon-left">
 				<i aria-hidden="true" class="fab fa-whatsapp"></i>			</span>
@@ -1501,12 +1501,12 @@ Kami bantu pengajuan Anda</h3>		</div>
 							<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<i aria-hidden="true" class="icon icon-user1"></i>						</span>
-										<span class="elementor-icon-list-text">Ali El Farabi</span>
+										<span class="elementor-icon-list-text"><?= $marketing['nama']?></span>
 									</li>
 								<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<i aria-hidden="true" class="icon icon-phone-call1"></i>						</span>
-										<span class="elementor-icon-list-text"> 0852 4090 7454</span>
+										<span class="elementor-icon-list-text"><?= $marketing['no_wa']?></span>
 									</li>
 						</ul>
 				</div>
@@ -1585,7 +1585,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 								<div class="elementor-element elementor-element-46dd1a89 elementor-align-right elementor-mobile-align-right elementor-widget elementor-widget-button" data-id="46dd1a89" data-element_type="widget" data-settings="{&quot;sticky&quot;:&quot;bottom&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-size-sm" role="button">
+			<a href="<?= $link_wa?>" target="_blank" class="elementor-button elementor-size-sm" role="button">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon elementor-align-icon-left">
 				<i aria-hidden="true" class="fab fa-whatsapp"></i>			</span>
