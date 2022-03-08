@@ -16,6 +16,10 @@ class DaftarLandingPage extends MY_Controller {
         $this->load->view("sales/registrasi", $data);
     }
 
+    public function kalkulator(){
+        $this->load->view("sales/kalkulator");
+    }
+
     // public function index(){
     //     $data['js'] = [
     //         "ajax.js",
@@ -163,6 +167,70 @@ class DaftarLandingPage extends MY_Controller {
         ");
         
         redirect(base_url('daftarlandingpage'));
+    }
+
+    public function add_leads(){
+        // var_dump($_POST);
+        $data = [
+            'id_marketing' => $this->input->post("id"),
+            'nama' => $this->input->post("nama"),
+            'no_wa' => $this->input->post("no_wa"),
+            'email' => $this->input->post("email"),
+            'project' => $this->input->post("project"),
+        ];
+        
+        $id_name = $this->input->post("id_name");
+        $email_marketing = $this->input->post("email_marketing");
+        $query = $this->daftarlandingpage->add_data("leads", $data);
+
+        $this->load->config('email');
+        $this->load->library('email');
+        
+        $from = $this->config->item('smtp_user');
+
+        $to = $email_marketing;
+        $project = $this->input->post("project");
+
+        if($project == "klaster-nayanika"){
+            $nama_project = "Klaster Nayanika";
+        } else if($project == "sakinah-mountain-view"){
+            $nama_project = "Sakinah Mountain View";
+        } else if($project == "raudhoh-madani-hills"){
+            $nama_project = "Kavling RMH";
+        } else if($project == "beverly-lake"){
+            $nama_project = "Beverly Lake";
+        } else if($project == "cahaya-swarga-parung"){
+            $nama_project = "Cahaya Swarga Parung";
+        }
+
+        $subject = "Data Peminat {$nama_project}";
+
+        $message = "
+            <p>Berikut data peminat Anda yang telah download brosur {$nama_project}, silahkan di follow up maksimal ya..</p>
+
+            <p>
+                Nama : {$this->input->post('nama')} <br>
+                No. WA : {$this->input->post('no_wa')}<br>
+                Email : {$this->input->post('email')}
+            </p>
+
+            <p>Terima kasih, semoga berminat survey & closing. Aamiin Ya Allah</p>";
+
+        $this->email->set_newline("\r\n");
+        $this->email->from($from);
+        $this->email->to($to);
+        $this->email->subject($subject);
+        $this->email->message($message);
+        $this->email->send();
+        
+        $this->email->set_newline("\r\n");
+        $this->email->from($from);
+        $this->email->to("shariagroup1@gmail.com");
+        $this->email->subject($subject);
+        $this->email->message($message);
+        $this->email->send();
+
+        redirect(base_url($_POST['project'].'/'.$_POST['id_name']));
     }
 
     public function get_username(){
