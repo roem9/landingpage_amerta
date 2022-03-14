@@ -2,10 +2,10 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-			<title>Halaman &#8211; Sakinah Mountain View</title>
+			<title>Sakinah Mountain View - Kavling Siap Bangun Di Bogor</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name='robots' content='max-image-preview:large'>
-<title>Halaman &#8211; Sakinah Mountain View</title>
+<title>Sakinah Mountain View - Kavling Siap Bangun Di Bogor</title>
 <link rel='dns-prefetch' href='//s.w.org'>
 <link rel="alternate" type="application/rss+xml" title="Sakinah Mountain View &raquo; Feed" href="<?= base_url()?>assets/sakinahmountainview.com/feed/index.htm">
 <link rel="alternate" type="application/rss+xml" title="Sakinah Mountain View &raquo; Comments Feed" href="<?= base_url()?>assets/sakinahmountainview.com/comments/feed/index.htm">
@@ -1733,7 +1733,7 @@ var ekit_config = {"ajaxurl":"https:\/\/sakinahmountainview.com\/wp-admin\/admin
 			})
 		} else {
 			$("#formBrosur").submit();
-			window.open('https://drive.google.com/file/d/1Sg0QFkcF-UAOfk4T62za_FSj3M36KrvX/view?usp=sharing', '_blank');
+			window.open('https://drive.google.com/file/d/1lk8OwCUDKbFdRLaar4TBY31ixjygMC3m/view?usp=sharing', '_blank');
 		}
 
 	})
